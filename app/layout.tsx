@@ -128,6 +128,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <AdSenseHead />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6771833588582297"
+          crossOrigin="anonymous"></script>
       </head>
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
