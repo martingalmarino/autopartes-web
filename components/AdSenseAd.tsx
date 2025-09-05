@@ -17,7 +17,7 @@ export function AdSenseAd({
   className = '',
   responsive = true 
 }: AdSenseAdProps) {
-  const adRef = useRef<HTMLDivElement>(null)
+  const adRef = useRef<HTMLModElement>(null)
   const publisherId = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID || 'ca-pub-6771833588582297'
 
   useEffect(() => {
