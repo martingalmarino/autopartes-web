@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Search, MapPin, FileText, Calendar } from 'lucide-react'
 import { JurisdictionCard } from '@/components/JurisdictionCard'
 import { getJurisdicciones } from '@/lib/jurisdicciones'
+import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
 
 // Force deploy update - Vercel manual trigger
 
@@ -79,6 +80,13 @@ export async function HomePageClient() {
               Ver todas las jurisdicciones
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Adsterra Banner */}
+      <section className="py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AdsterraContentBanner />
         </div>
       </section>
 

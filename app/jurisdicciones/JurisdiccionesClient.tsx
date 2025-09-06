@@ -1,6 +1,7 @@
 import { JurisdictionCard } from '@/components/JurisdictionCard'
 import { getJurisdicciones } from '@/lib/jurisdicciones'
 import { JurisdiccionesFilters } from './JurisdiccionesFilters'
+import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
 
 // Force deploy update - Vercel manual trigger
 
@@ -54,6 +55,11 @@ export async function JurisdiccionesClient() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Adsterra Banner */}
+        <div className="mt-12">
+          <AdsterraContentBanner />
         </div>
       </div>
     </div>
