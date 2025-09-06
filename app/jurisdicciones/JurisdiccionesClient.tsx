@@ -35,6 +35,11 @@ export async function JurisdiccionesClient() {
           </p>
         </div>
 
+        {/* Adsterra Banner - Movido más arriba */}
+        <div className="mb-8 md:mb-12">
+          <AdsterraContentBannerMobile />
+        </div>
+
         {/* Filters */}
         <JurisdiccionesFilters jurisdicciones={jurisdicciones} estadosConCount={estadosConCount} />
 
@@ -57,10 +62,6 @@ export async function JurisdiccionesClient() {
           </div>
         </div>
 
-        {/* Adsterra Banner */}
-        <div className="mt-8 md:mt-12">
-          <AdsterraContentBannerMobile />
-        </div>
       </div>
     </div>
   )

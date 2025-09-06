@@ -47,6 +47,13 @@ export default function GuiasPage() {
         </div>
       </section>
 
+      {/* Adsterra Banner - Movido más arriba */}
+      <section className="py-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AdsterraContentBannerMobile />
+        </div>
+      </section>
+
       {/* Artículos Section */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,11 +110,6 @@ export default function GuiasPage() {
                 </div>
               </article>
             ))}
-          </div>
-
-          {/* Adsterra Banner */}
-          <div className="mt-12 md:mt-16">
-            <AdsterraContentBannerMobile />
           </div>
 
           {/* Mensaje para futuros artículos */}

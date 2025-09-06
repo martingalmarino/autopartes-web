@@ -62,6 +62,13 @@ export default function ArticuloGrabadoProvincias() {
         </div>
       </section>
 
+      {/* Adsterra Banner - Movido más arriba */}
+      <section className="py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AdsterraContentBannerMobile />
+        </div>
+      </section>
+
       {/* Contenido del Artículo */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
@@ -380,11 +387,6 @@ export default function ArticuloGrabadoProvincias() {
               </div>
             </div>
           </section>
-        </div>
-
-        {/* Adsterra Banner */}
-        <div className="mb-8 md:mb-12">
-          <AdsterraContentBannerMobile />
         </div>
 
         {/* CTA Final */}
