@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowLeft, Calendar, User, Clock, BookOpen, CheckCircle, AlertCircle, Lightbulb } from 'lucide-react'
+import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
 
 export const metadata = {
   title: 'Lo que nadie te explicó sobre RPA, RPM y cédula digital (y necesitás saber ya) - Guías',
@@ -295,6 +296,11 @@ export default function ArticuloRPARPM() {
               </ul>
             </div>
           </section>
+        </div>
+
+        {/* Adsterra Banner */}
+        <div className="mb-12">
+          <AdsterraContentBanner />
         </div>
 
         {/* CTA Final */}

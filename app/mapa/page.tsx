@@ -1,5 +1,6 @@
 import { getJurisdicciones } from '@/lib/jurisdicciones'
 import { MapaInteractive } from './MapaInteractive'
+import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
 
 export default async function MapaPage() {
   const jurisdicciones = await getJurisdicciones()
@@ -20,6 +21,11 @@ export default async function MapaPage() {
 
         {/* Interactive Content */}
         <MapaInteractive jurisdicciones={jurisdicciones} />
+
+        {/* Adsterra Banner */}
+        <div className="mt-16">
+          <AdsterraContentBanner />
+        </div>
       </div>
     </div>
   )

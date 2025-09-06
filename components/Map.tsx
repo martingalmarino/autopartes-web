@@ -78,7 +78,7 @@ export function Map({ centers, onCenterSelect, className = '' }: MapProps) {
   return (
     <div className={`relative map-container ${className}`}>
       <MapContainer
-        center={center as [number, number]}
+        center={center}
         zoom={centers.length > 0 ? 8 : 10}
         className="w-full h-96 rounded-lg overflow-hidden border border-neutral-200"
         style={{ height: '384px' }}

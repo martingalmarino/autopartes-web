@@ -1,6 +1,7 @@
 import { Smartphone, CreditCard, Download, CheckCircle, Info, ExternalLink } from 'lucide-react'
 import { getJurisdiccionBySlug } from '@/lib/jurisdicciones'
 import { notFound } from 'next/navigation'
+import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
 
 interface CedulasPageProps {
   params: { slug: string }
@@ -191,6 +192,11 @@ export default async function CedulasPage({ params }: CedulasPageProps) {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* Adsterra Banner */}
+      <section className="py-8">
+        <AdsterraContentBanner />
       </section>
     </div>
   )
