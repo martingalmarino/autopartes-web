@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { BookOpen, Calendar, User, ArrowRight } from 'lucide-react'
-import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
+import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 
 // Datos de los artículos (en el futuro esto vendrá de una base de datos)
 const articulos = [
@@ -106,8 +106,8 @@ export default function GuiasPage() {
           </div>
 
           {/* Adsterra Banner */}
-          <div className="mt-16">
-            <AdsterraContentBanner />
+          <div className="mt-12 md:mt-16">
+            <AdsterraContentBannerMobile />
           </div>
 
           {/* Mensaje para futuros artículos */}

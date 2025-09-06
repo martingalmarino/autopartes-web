@@ -1,7 +1,7 @@
 import { CheckCircle, AlertCircle, Info, ExternalLink, DollarSign, Clock, FileText } from 'lucide-react'
 import { getJurisdiccionBySlug } from '@/lib/jurisdicciones'
 import { ToC } from '@/components/ToC'
-import { AdsterraContentBanner } from '@/components/AdsterraNativeBanner'
+import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 import { notFound } from 'next/navigation'
 
 interface GrabadoPageProps {
@@ -180,8 +180,8 @@ export default async function GrabadoPage({ params }: GrabadoPageProps) {
         </section>
 
         {/* Adsterra Banner */}
-        <section className="py-8">
-          <AdsterraContentBanner />
+        <section className="py-4 md:py-8">
+          <AdsterraContentBannerMobile />
         </section>
       </div>
 

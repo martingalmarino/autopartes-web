@@ -78,7 +78,7 @@ export function AdsterraHeaderBanner({ className = '' }: { className?: string })
 export function AdsterraContentBanner({ className = '' }: { className?: string }) {
   return (
     <AdsterraNativeBanner 
-      className={`w-full max-w-4xl h-[250px] mx-auto my-5 ${className}`}
+      className={`w-full max-w-4xl h-[200px] md:h-[250px] mx-auto my-3 md:my-5 ${className}`}
     />
   )
 }
@@ -89,5 +89,27 @@ export function AdsterraSidebarBanner({ className = '' }: { className?: string }
     <AdsterraNativeBanner 
       className={`w-full max-w-[300px] h-[600px] my-5 ${className}`}
     />
+  )
+}
+
+// Componente optimizado para móviles - menos intrusivo
+export function AdsterraMobileBanner({ className = '' }: { className?: string }) {
+  return (
+    <AdsterraNativeBanner 
+      className={`w-full max-w-sm h-[150px] mx-auto my-2 ${className}`}
+    />
+  )
+}
+
+// Componente para banner en el medio del contenido - optimizado para móviles
+export function AdsterraContentBannerMobile({ className = '' }: { className?: string }) {
+  return (
+    <div className="w-full flex justify-center my-4 md:my-6">
+      <div className="w-full max-w-sm md:max-w-4xl">
+        <AdsterraNativeBanner 
+          className={`w-full h-[150px] md:h-[250px] ${className}`}
+        />
+      </div>
+    </div>
   )
 }
