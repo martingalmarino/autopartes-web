@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ArrowLeft, Calendar, User, Clock, BookOpen, CheckCircle, AlertCircle, MapPin, DollarSign, FileText } from 'lucide-react'
-import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 
 export const metadata = {
   title: 'Grabado de autopartes en Argentina: requisitos provincia por provincia (2025) - Guías',
@@ -62,12 +61,6 @@ export default function ArticuloGrabadoProvincias() {
         </div>
       </section>
 
-      {/* Adsterra Banner - Movido más arriba */}
-      <section className="py-8">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AdsterraContentBannerMobile />
-        </div>
-      </section>
 
       {/* Contenido del Artículo */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

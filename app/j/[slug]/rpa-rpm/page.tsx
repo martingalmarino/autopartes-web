@@ -2,7 +2,6 @@ import { CheckCircle, FileText, Calendar, AlertTriangle, Info } from 'lucide-rea
 import { getJurisdiccionBySlug } from '@/lib/jurisdicciones'
 import { notFound } from 'next/navigation'
 import { RpaRpmInteractive } from './RpaRpmInteractive'
-import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 
 interface RpaRpmPageProps {
   params: { slug: string }
@@ -113,10 +112,6 @@ export default async function RpaRpmPage({ params }: RpaRpmPageProps) {
         </div>
       </section>
 
-      {/* Adsterra Banner */}
-      <section className="py-4 md:py-8">
-        <AdsterraContentBannerMobile />
-      </section>
     </div>
   )
 }

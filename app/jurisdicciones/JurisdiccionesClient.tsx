@@ -1,7 +1,6 @@
 import { JurisdictionCard } from '@/components/JurisdictionCard'
 import { getJurisdicciones } from '@/lib/jurisdicciones'
 import { JurisdiccionesFilters } from './JurisdiccionesFilters'
-import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 
 // Force deploy update - Vercel manual trigger
 
@@ -33,11 +32,6 @@ export async function JurisdiccionesClient() {
             Encontrá información detallada sobre grabado de autopartes, RPA/RPM y cédulas digitales 
             para cada jurisdicción de Argentina.
           </p>
-        </div>
-
-        {/* Adsterra Banner - Movido más arriba */}
-        <div className="mb-8 md:mb-12">
-          <AdsterraContentBannerMobile />
         </div>
 
         {/* Filters */}

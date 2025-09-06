@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ArrowLeft, Calendar, User, Clock, BookOpen, CheckCircle, AlertCircle, Lightbulb } from 'lucide-react'
-import { AdsterraContentBannerMobile } from '@/components/AdsterraNativeBanner'
 
 export const metadata = {
   title: 'Lo que nadie te explicó sobre RPA, RPM y cédula digital (y necesitás saber ya) - Guías',
@@ -62,12 +61,6 @@ export default function ArticuloRPARPM() {
         </div>
       </section>
 
-      {/* Adsterra Banner - Movido más arriba */}
-      <section className="py-8">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AdsterraContentBannerMobile />
-        </div>
-      </section>
 
       {/* Contenido del Artículo */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
