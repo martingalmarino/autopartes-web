@@ -17,7 +17,7 @@ export function AdsterraSmartLinks({ key: smartLinkKey, className = '' }: Adster
 
     // Cargar el script de smartlinks de Adsterra
     const script = document.createElement('script')
-    script.src = `https://www.revenuecpmgate.com/tzx11u2jy?key=${smartLinkKey}`
+    script.src = `https://www.revenuecpmgate.com/d1z1mbpd?key=${smartLinkKey}`
     script.async = true
     script.defer = true
     
@@ -44,7 +44,7 @@ export function AdsterraSmartLinks({ key: smartLinkKey, className = '' }: Adster
 export function AdsterraArticleSmartLinks({ className = '' }: { className?: string }) {
   return (
     <AdsterraSmartLinks 
-      key="8d2b02772ce76ba031152b1be6b67226"
+      key="f2ffce09628389df66dd6429646ce84b"
       className={className}
     />
   )
@@ -59,7 +59,7 @@ export function useAdsterraSmartLinks(key: string) {
     }
 
     const script = document.createElement('script')
-    script.src = `https://www.revenuecpmgate.com/tzx11u2jy?key=${key}`
+    script.src = `https://www.revenuecpmgate.com/d1z1mbpd?key=${key}`
     script.async = true
     script.defer = true
     
